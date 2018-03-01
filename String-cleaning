@@ -1,0 +1,9 @@
+// https://www.codewars.com/kata/string-cleaning/train/javascript
+
+function stringClean(s){
+  let str = '';
+  for(let i = 0; i < s.length; i++) {
+    if (Number.isNaN(parseInt(s[i]))) str = str + s[i];
+  }
+  return str;
+}
